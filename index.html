@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Политика конфиденциальности «Календарь удобный»</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f5f3ef;
+      --paper: #fff;
+      --ink: #232429;
+      --muted: #5c5b61;
+      --border: #dedbd4;
+      --accent: #8d301b;
+      --hero: #25262b;
+      --hero-accent: #ffbcaa;
+      --selected: #f8dacd;
+      --focus: #155c93;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-block-start: 84px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font: 1rem/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+      overflow-wrap: anywhere;
+    }
+    main {
+      width: min(calc(100% - 24px), 48rem);
+      margin-inline: auto;
+      padding-block: 6px 48px;
+    }
+    nav {
+      position: sticky;
+      z-index: 1;
+      top: 0;
+      padding-block: 12px;
+      background: var(--page);
+      display: flex;
+      gap: 8px;
+    }
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      min-width: min(7rem, 48%);
+      padding: 6px 14px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      line-height: 1.4;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    nav a[aria-current="true"] {
+      background: var(--selected);
+      color: var(--accent);
+      border-color: currentColor;
+      box-shadow: inset 0 -2px currentColor;
+    }
+    nav a:hover { border-color: var(--accent); }
+    a { color: var(--accent); text-underline-offset: .16em; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    h1:focus-visible { outline-color: var(--hero-accent); }
+    article + article { margin-block-start: 28px; }
+    header {
+      padding: clamp(18px, 5vw, 36px);
+      background: var(--hero);
+      color: #fff;
+      border-radius: 16px;
+    }
+    .version {
+      margin: 0 0 8px;
+      color: var(--hero-accent);
+      font-size: .875rem;
+      letter-spacing: .04em;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 5.5vw, 2.8rem);
+      line-height: 1.16;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+      hyphens: auto;
+    }
+    h2 {
+      margin: 0 0 .6em;
+      font-size: clamp(1.125rem, 3.5vw, 1.4rem);
+      line-height: 1.3;
+    }
+    section, footer {
+      margin-block-start: 12px;
+      padding: clamp(16px, 4vw, 26px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--paper);
+    }
+    section p, footer p { margin: 0; }
+    p + p { margin-block-start: .7em; }
+    footer p:first-child { color: var(--muted); }
+    @media (max-height: 390px) and (orientation: landscape) {
+      html { scroll-padding-block-start: 12px; }
+      nav { position: static; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #191a1e;
+        --paper: #232429;
+        --ink: #f2f0ed;
+        --muted: #c8c5bf;
+        --border: #434248;
+        --accent: #ffbcaa;
+        --hero: #2b2b31;
+        --selected: #442b28;
+        --focus: #9bd0ff;
+      }
+    }
+    @media print {
+      body, header, section, footer { background: #fff; color: #000; }
+      .version, footer p:first-child, a { color: #000; }
+      main { width: 100%; padding: 0; }
+      nav { display: none; }
+      article[hidden] { display: block !important; }
+      article + article { break-before: page; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Язык политики / Policy language">
+      <a href="#ru" lang="ru" hreflang="ru">Русский</a>
+      <a href="#en" lang="en" hreflang="en">English</a>
+    </nav>
+
+    <article id="ru" lang="ru" aria-labelledby="title-ru">
+      <header>
+        <p class="version">1.0 · <time datetime="2026-11-05">2026-11-05</time></p>
+        <h1 id="title-ru" tabindex="-1">Политика конфиденциальности «Календарь удобный»</h1>
+      </header>
+      <section>
+        <h2>1. Данные и разрешения</h2>
+        <p>События, задачи, дни рождения, описания, выбранные адреса контактов, изображения и настройки сохраняются на смартфоне для работы календаря. Приложение не запрашивает геолокацию или общий доступ к галерее: изображения Вы выбираете через системное окно.</p>
+        <p>По Вашему выбору функция «Дни рождения из контактов» запрашивает доступ к контактам и читает названия адресных книг, имена и даты рождения. Показываются записи выбранных Вами книг; контакты не изменяются и не отправляются разработчику. Сами контакты не входят в резервные копии календаря: сохраняются выбор книг, цвета, параметры напоминаний и ссылки на закрепления. На другом смартфоне контакты нужно синхронизировать отдельно и снова предоставить разрешение.</p>
+        <p>Доступ к контактам, системным календарям и уведомлениям предоставляется с Вашего разрешения и может быть отозван в настройках Android. Синхронизацией контактов и календарей аккаунтов управляют их поставщики. Названия записей могут отображаться в виджетах и уведомлениях, включая экран блокировки.</p>
+      </section>
+      <section>
+        <h2>2. Хранение и передача</h2>
+        <p>Данные хранятся в закрытой области приложения. У календаря нет собственного сервера, рекламы и собственной аналитики; личные записи автоматически разработчику не отправляются. Приложение не создаёт собственных аккаунтов и не продаёт персональные данные.</p>
+      </section>
+      <section>
+        <h2>3. Резервные копии</h2>
+        <p>Google Диск подключается по Вашему выбору; автокопирование по умолчанию выключено. Копии содержат локальные календари, события, задачи, дни рождения, повторы, напоминания, изображения, настройки, закрепления, выполненные записи и корзину. Данные передаются по HTTPS в скрытое хранилище календаря в выбранном аккаунте Google. Доступ ко всем остальным файлам Диска не запрашивается. Для входа и передачи Google обрабатывает сведения об аккаунте и необходимые технические данные; пароль Google приложению не передаётся.</p>
+        <p>На смартфоне — 5 последних копий. На Google Диске — 5 последних копий суммарно для этого аккаунта, с учётом всех устройств и переустановок. Используется место Вашего Google Диска. Отключение копирования не удаляет прежние копии; удалить облачные копии можно отдельной командой приложения или средствами Google.</p>
+        <p>Копию также можно сохранить в файл. Она содержит личные данные и не защищена паролем самим календарём. Восстановление после подтверждения заменяет локальные записи и настройки. Для событий аккаунтов сохраняются локальные дополнения и сведения для их сопоставления после переноса; самими событиями управляет поставщик аккаунта. Входы в аккаунты, разрешения Android и расположение виджетов не переносятся.</p>
+      </section>
+      <section>
+        <h2>4. Отправка и внешние сервисы</h2>
+        <p>При отправке записей Вы выбираете приложение и получателя. Внешние сервисы обрабатывают переданные данные по своим правилам. Благодарность открывает страницу Т-Банка; календарь не получает платёжные реквизиты и подтверждение платежа. Контакт разработчика открывается в Telegram. Переданные разработчику сообщения используются для ответа.</p>
+      </section>
+      <section>
+        <h2>5. Срок хранения и удаление</h2>
+        <p>Личные записи хранятся до окончательного удаления. Корзина, выполненные задачи и закрепления автоматически не очищаются. Неиспользуемые вложения удаляются вместе с окончательно удалённой локальной записью. Временные файлы отправки старше семи дней очищаются при следующей отправке или очистке кеша.</p>
+        <p>Удаление приложения или очистка его данных удаляет локальные записи, настройки, вложения и локальные копии. События аккаунтов, облачные копии и экспортированные файлы удаляются отдельно. Ранее созданные копии могут содержать удалённые записи до замены или удаления самих копий.</p>
+      </section>
+      <footer>
+        <p>Правила Google: <a href="https://policies.google.com/privacy" rel="noreferrer">https://policies.google.com/privacy</a></p>
+        <p>Разработчик: Дядя Женя. Контакт: <a href="mailto:zhulamanov@gmail.com">zhulamanov@gmail.com</a>.</p>
+      </footer>
+    </article>
+
+    <article id="en" lang="en" aria-labelledby="title-en">
+      <header>
+        <p class="version">1.0 · <time datetime="2026-11-05">2026-11-05</time></p>
+        <h1 id="title-en" tabindex="-1">Privacy policy — Convenient Calendar</h1>
+      </header>
+      <section>
+        <h2>1. Data and permissions</h2>
+        <p>Events, tasks, birthdays, notes, selected contact addresses, images and settings are saved on your smartphone for calendar features. The app does not request location or general gallery access: images are selected through a system picker.</p>
+        <p>If you enable Birthdays from contacts, the app requests contact access and reads address-book names, contact names and birthday dates. Only the address books you choose are displayed; contacts are not changed or sent to the developer. Contacts themselves are not included in calendar backups. Book selections, colors, reminder settings and pin references are saved. On another smartphone, contacts must be synchronized separately and access granted again.</p>
+        <p>Access to contacts, device calendars and notifications requires your permission and can be revoked in Android settings. Account providers manage contact and calendar synchronization. Entry titles can appear in widgets and notifications, including the lock screen.</p>
+      </section>
+      <section>
+        <h2>2. Storage and transfer</h2>
+        <p>Data is kept in private app storage. The calendar has no developer-operated server, advertising or developer analytics. Personal entries are not automatically sent to the developer. The app creates no accounts and does not sell personal data.</p>
+      </section>
+      <section>
+        <h2>3. Backups</h2>
+        <p>Connecting Google Drive is optional; automatic backup is off by default. Copies include local calendars, events, tasks, birthdays, recurrence, reminders, images, settings, pins, completed entries and trash. Data is transferred over HTTPS to this calendar's hidden storage in the Google account you choose. No access to other Drive files is requested. Google processes account and technical information needed for sign-in and transfer; the app does not receive your Google password.</p>
+        <p>The smartphone keeps its 5 most recent copies. Google Drive keeps 5 copies in total for this account, across all devices and reinstalls. Your Google Drive storage is used. Disabling backup does not delete previous copies; use the app's delete command or Google's controls to remove cloud copies.</p>
+        <p>You can also export a backup file. It contains personal data and is not password-encrypted by the calendar. Restore replaces local entries and settings after confirmation. Local additions and matching information are saved for account events; the account provider manages the events themselves. Account sign-ins, Android permissions and widget positions are not transferred.</p>
+      </section>
+      <section>
+        <h2>4. Sharing and external services</h2>
+        <p>You choose the app and recipient when sharing entries. External services process the transferred data under their own policies. Support opens T-Bank's page; the calendar receives no payment details or confirmation. Developer contact opens Telegram. Messages sent to the developer are used to reply.</p>
+      </section>
+      <section>
+        <h2>5. Retention and deletion</h2>
+        <p>Personal entries remain until permanently deleted. Trash, completed tasks and pins are not automatically cleared. Unused attachments are removed with their permanently deleted local entry. Temporary sharing files older than seven days are cleared during the next sharing operation or cache clearing.</p>
+        <p>Uninstalling or clearing app data deletes local entries, settings, attachments and local copies. Account events, cloud copies and exported files must be deleted separately. Existing copies can contain deleted entries until those copies are replaced or deleted.</p>
+      </section>
+      <footer>
+        <p>Google policies: <a href="https://policies.google.com/privacy" rel="noreferrer">https://policies.google.com/privacy</a></p>
+        <p>Developer: <span lang="ru">Дядя Женя</span>. Contact: <a href="mailto:zhulamanov@gmail.com">zhulamanov@gmail.com</a>.</p>
+      </footer>
+    </article>
+  </main>
+  <script>
+    (() => {
+      const languages = ["ru", "en"];
+      function selectLanguage(moveFocus) {
+        const active = location.hash === "#en" ? "en" : "ru";
+        for (const language of languages) {
+          document.getElementById(language).hidden = language !== active;
+          const link = document.querySelector('nav a[href="#' + language + '"]');
+          if (language === active) link.setAttribute("aria-current", "true");
+          else link.removeAttribute("aria-current");
+        }
+        const heading = document.getElementById("title-" + active);
+        document.documentElement.lang = active;
+        document.title = heading.textContent;
+        if (moveFocus) {
+          heading.focus({ preventScroll: true });
+          document.getElementById(active).scrollIntoView({ block: "start" });
+        }
+      }
+      selectLanguage(languages.includes(location.hash.slice(1)));
+      window.addEventListener("hashchange", () => selectLanguage(true));
+    })();
+  </script>
+</body>
+</html>
